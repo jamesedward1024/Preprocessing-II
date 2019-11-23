@@ -1,1 +1,16 @@
 // Mixins in here
+
+.mixin(@padding: 10px 30px; @radius: 10px; @bgcolor: @button-bg; @color: @white; @align: center;) {
+  padding: @padding;
+  border-radius: @radius;
+  background: @bgcolor;
+  color: @color;
+  text-align: @align;
+}
+
+.btn {
+  .mixin();
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2rem;
+}
